@@ -40,7 +40,13 @@ function App() {
   }
 
   const handleClearGeneralInfo = () => {
-    setGeneralInfo (defaultGeneralInfo);
+    const resetGeneralInfo = {
+      fullname: "",
+      email: "",
+      phone: "",
+      address: "",
+    }
+    setGeneralInfo (resetGeneralInfo);
   };
 
   const handleAddEducation = () => {
