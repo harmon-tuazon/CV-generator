@@ -1,0 +1,92 @@
+$green: #54B689;
+$ash: #4f4f4f;
+$dark: #212529;
+
+
+
+.generalInfo-container {
+    background-color: $green;
+    width: 100%;
+    height: 10rem;
+    color: $ash;
+    padding-top: 1.25rem; 
+    
+    .fullname {
+        background-color: $green;
+        font-weight: 700;
+        color: $dark;
+    }
+    
+    .contactInfo-container {
+        background-color: $green;
+        padding-bottom: 10px;
+
+        .icon {
+            width: 1.7rem;
+            height: auto;
+            background-color: $green;
+            vertical-align: middle;
+            margin-right: 3px;
+
+        }
+    }
+    .contactInfo-container span {
+        background-color: $green;
+    }
+    
+}
+
+.preview-container {
+    margin: 3rem 0 4rem 0;
+
+    .preview-title {
+        background-color: $green;
+        margin: auto;
+        width: 85%;
+        border-radius: 20px;
+
+    }
+
+    .preview-block {
+        display: flex;
+        margin: 1.5rem 4rem;
+
+
+        .block-grouping-left, .block-grouping-right {
+            text-align: left;       
+
+            .grouping-title {
+                font-weight: 700;
+            }
+
+        }
+        .block-grouping-left{
+            width: 30%;
+         }
+        .block-grouping-right{
+           flex: 2 1 25rem;
+           border-left: $green solid 2.5px;
+           padding-left: 1.5rem;
+           position: relative;
+        }
+
+        .block-grouping-right::before {
+            content: "";
+            position: absolute;
+            padding: 5px;
+            left: -8px;
+            top: 0;
+            border-radius: 50px;
+            border: $green 2px solid;
+    }
+}
+}
+
+.resume-design {
+    width: 100%;
+    padding: 4rem;
+    height: auto;
+    background-color: $green;
+    clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+    margin-top: 2rem;
+}

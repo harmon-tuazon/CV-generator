@@ -1,0 +1,141 @@
+$green: #54B689;
+$ash: #4f4f4f;
+$backgroundColor: #f3f4f6;
+$dark: #212529;
+
+.form-container {
+    width: 100%;
+    margin: 3rem;
+    border: 2.5px $ash solid;
+    border-radius: 12px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .form-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4.5rem;
+        border-radius: 12px;
+        border: none;
+
+
+       h2 {
+        margin-left: 1rem;
+       }
+
+       .open, .closed {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            transition: all 0.5s ;
+            
+        }
+
+        .open {
+            transform: rotate(180deg);
+        }
+    }
+
+    .form-box {
+        position: relative;
+    }
+
+    .form-group {
+        text-align: left;
+        margin: 1rem 0 1rem 1rem;
+        transition: all 0.5s ;
+
+       
+        .input-group {
+            position: relative;
+            margin-bottom: 0.5rem;
+            border-radius: 12px;
+
+            .input {
+                margin-bottom: 0.5rem;
+                width: 16rem;
+                height: 2.5rem;
+                border: none;
+                border-bottom: $dark solid 2.5px;
+                outline: none;
+            }
+
+            .input:focus, .onFocus {
+                border: $green solid 2.5px;
+                border-radius: 12px;
+            }
+    
+            .label {
+                font-weight: 700;
+                position: absolute;
+                top: 0.75rem;
+                left: 0.15rem;
+                transition: all 0.5s ;
+                display: inline-block;
+                padding: 0 5px 0 10px;
+                background-color: $backgroundColor;
+                z-index: 1;
+                
+                
+            }
+    
+            .input:focus ~ .label, .active{
+                transform: translateX(3px) translateY(-1.25rem);
+                background-color: $green;
+                padding: 0 3px;
+            }
+    
+        }
+
+         
+        .button-group {
+            margin: 1rem 0 1.5rem 0;
+            display: flex;
+            justify-content: start;
+            gap: 1rem;
+        }
+
+    }
+}
+
+
+.clear {
+    background-color: $backgroundColor;
+    color: $ash;
+    border: 1.5px solid $ash;
+    border-radius: 50px;
+    width: 6rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-weight: 500;
+
+    &:hover{
+        background-color: rgb(178, 32, 32);
+        color: $backgroundColor;
+        border: none;
+    }
+}
+
+.add-button {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    background-color: $green;
+    border: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    color: $backgroundColor;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $backgroundColor;
+        color: $green;
+        border: 1.5px solid $green;
+    }
+}
+
+
